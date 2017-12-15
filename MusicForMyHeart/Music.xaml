@@ -1,0 +1,19 @@
+﻿<Window x:Class="MusicForMyHeart.Music"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicForMyHeart"
+        mc:Ignorable="d"
+        Title="Music" Height="388.298" Width="535.106">
+    <Grid Margin="0,0,0,0">
+        <Label Content="Search:" HorizontalAlignment="Left" Margin="28,22,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Name ="SearchTextBox"  Height="26" Margin="81,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
+        <RadioButton Content="by artist" Name="RadioButtonArtist" HorizontalAlignment="Left" Margin="81,64,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="by title" Name="RadioButtonTitle" HorizontalAlignment="Left" Margin="176,64,0,0" VerticalAlignment="Top"/>
+        <Button Content="Add New Playlist" Name="NewPlaylistButton" HorizontalAlignment="Left" Height="26" Margin="292,22,0,0" VerticalAlignment="Top" Width="101" Click="NewPlaylistButton_Click"/>
+        <Button Content="Back" HorizontalAlignment="Left" Height="26" Margin="425,22,0,0" VerticalAlignment="Top" Width="51" Click="Button_Click"/>
+        <ListBox HorizontalAlignment="Left" Height="175" Margin="10,173,0,0" VerticalAlignment="Top" Width="507"/>
+
+    </Grid>
+</Window>
