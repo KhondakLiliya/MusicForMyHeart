@@ -22,8 +22,8 @@ namespace MusicForMyHeart
             SqlDataReader datar = new SqlCommand(sqlcommand, new SqlConnection(connectionString)).ExecuteReader();
             users = new List<User>();
             users.Add(new User((int)datar["ID_person"], (string)datar["login"], (string)datar["password"]));
-            
-        } //написать конструктор репозитория, заполняя его данными из БД
+
+        } //написать конструктор репозитория, заполняя его данными из БД/
 
 
     }

@@ -6,12 +6,16 @@
         xmlns:local="clr-namespace:MusicForMyHeart"
         mc:Ignorable="d"
         Title="NewPlaylist" Height="300" Width="486.17">
+    <Window.Background>
+        <ImageBrush ImageSource="muz_7.jpg" Stretch="UniformToFill" TileMode="None" />
+    </Window.Background>
     <Grid>
-        <Label Content="Enter name for playlist:" HorizontalAlignment="Left" Height="27" Margin="10,10,0,0" VerticalAlignment="Top" Width="135"/>
-        <TextBox HorizontalAlignment="Left" Name="Nametextbox" Height="27" Margin="145,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"/>
-        <Label Content="Search:" HorizontalAlignment="Left" Height="27" Margin="22,60,0,0" VerticalAlignment="Top" Width="48"/>
-        <TextBox HorizontalAlignment="Left" Name="Searchtextbox" Height="27" Margin="96,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
-        <Button Content="OK" HorizontalAlignment="Left" Height="44" Margin="306,21,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="Enter name for playlist:" Foreground="White" HorizontalAlignment="Left" Height="27" Margin="10,10,0,0" VerticalAlignment="Top" Width="157" FontFamily="Georgia" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Name="Nametextbox" Height="27" Margin="186,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"/>
+        <Label Content="Search:" Foreground="White" HorizontalAlignment="Left" Height="27" Margin="22,60,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Georgia"/>
+        <TextBox HorizontalAlignment="Left" Name="Searchtextbox" Height="27" Margin="137,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
+        <Button Content="OK" HorizontalAlignment="Left" Height="44" Margin="352,23,0,0" VerticalAlignment="Top" Width="50" FontFamily="Georgia" FontWeight="Bold"/>
+        <ListBox HorizontalAlignment="Left" Height="148" Margin="10,112,0,0" VerticalAlignment="Top" Width="458"/>
 
     </Grid>
 </Window>

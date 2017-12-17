@@ -6,13 +6,16 @@
         xmlns:local="clr-namespace:MusicForMyHeart"
         mc:Ignorable="d"
         Title="Music" Height="388.298" Width="535.106">
+    <Window.Background>
+        <ImageBrush ImageSource="muz_7.jpg" Stretch="UniformToFill" TileMode="None" />
+    </Window.Background>
     <Grid Margin="0,0,0,0">
-        <Label Content="Search:" HorizontalAlignment="Left" Margin="28,22,0,0" VerticalAlignment="Top"/>
+        <Label Content="Search:" Foreground="White" HorizontalAlignment="Left" Margin="28,22,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontWeight="Bold"/>
         <TextBox HorizontalAlignment="Left" Name ="SearchTextBox"  Height="26" Margin="81,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
-        <RadioButton Content="by artist" Name="RadioButtonArtist" HorizontalAlignment="Left" Margin="81,64,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="by title" Name="RadioButtonTitle" HorizontalAlignment="Left" Margin="176,64,0,0" VerticalAlignment="Top"/>
-        <Button Content="Add New Playlist" Name="NewPlaylistButton" HorizontalAlignment="Left" Height="26" Margin="292,22,0,0" VerticalAlignment="Top" Width="101" Click="NewPlaylistButton_Click"/>
-        <Button Content="Back" HorizontalAlignment="Left" Height="26" Margin="425,22,0,0" VerticalAlignment="Top" Width="51" Click="Button_Click"/>
+        <RadioButton Content="by artist" Foreground="White" Name="RadioButtonArtist" HorizontalAlignment="Left" Margin="81,64,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontWeight="Bold"/>
+        <RadioButton Content="by title" Name="RadioButtonTitle" Foreground="White" HorizontalAlignment="Left" Margin="176,64,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontWeight="Bold"/>
+        <Button Content="Add New Playlist" Name="NewPlaylistButton" HorizontalAlignment="Left" Height="26" Margin="292,22,0,0" VerticalAlignment="Top" Width="115" Click="NewPlaylistButton_Click" FontFamily="Georgia" FontWeight="Bold"/>
+        <Button Content="Back" HorizontalAlignment="Left" Height="26" Margin="425,22,0,0" VerticalAlignment="Top" Width="51" Click="Button_Click" FontFamily="Georgia" FontWeight="Bold"/>
         <ListBox HorizontalAlignment="Left" Height="175" Margin="10,173,0,0" VerticalAlignment="Top" Width="507"/>
 
     </Grid>

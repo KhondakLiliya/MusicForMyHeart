@@ -6,10 +6,13 @@
         xmlns:local="clr-namespace:MusicForMyHeart"
         mc:Ignorable="d"
         Title="Authorization" Height="350" Width="400.887">
-    <Grid Margin="0,0,0,-20">
-        <Button Name ="LoginButton" Content="Log in" HorizontalAlignment="Left" Height="36" Margin="125,187,0,0" VerticalAlignment="Top" Width="150" FontSize="20" Click="LoginButton_Click"/>
-        <Label Content="Login" HorizontalAlignment="Left" Height="35" Margin="50,62,0,0" VerticalAlignment="Top" Width="61" FontSize="18"/>
-        <Label Content="Password" HorizontalAlignment="Left" Height="35" Margin="35,117,0,0" VerticalAlignment="Top" Width="98" FontSize="18"/>
+    <Window.Background>
+        <ImageBrush ImageSource="muz_7.jpg" Stretch="UniformToFill" TileMode="None" />
+    </Window.Background>
+    <Grid Margin="0,0,0,0">
+        <Button Name ="LoginButton" Content="Log in" HorizontalAlignment="Left" Height="36" Margin="125,187,0,0" VerticalAlignment="Top" Width="150" FontSize="20" Click="LoginButton_Click" FontFamily="Georgia" FontWeight="Bold"/>
+        <Label Content="Login" Foreground="White" HorizontalAlignment="Left" Height="35" Margin="50,62,0,0" VerticalAlignment="Top" Width="61" FontSize="18" FontFamily="Georgia" FontWeight="Bold"/>
+        <Label Content="Password" Foreground="White" HorizontalAlignment="Left" Height="35" Margin="35,117,0,0" VerticalAlignment="Top" Width="98" FontSize="18" FontFamily="Georgia" FontWeight="Bold"/>
         <PasswordBox Name="passwordbox" HorizontalAlignment="Left" Height="35" Margin="152,117,0,0" VerticalAlignment="Top" Width="179"/>
         <TextBox Name="logintextbox" HorizontalAlignment="Left" Height="35" Margin="152,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179"/>
 
