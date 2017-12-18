@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,36 +10,21 @@ namespace MusicForMyHeart
 {
     class User
     {
-        private int userid;
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
 
-        public int UserID
-        {
-            get { return userid; }
-            set { userid = value; }
-        }
+        public int UserID { get; set; }
 
-        private string login;
+        public string Login { get; set; }
 
-        public string Login
-        {
-            get { return login; }
-            set { login = value; }
-        }
+        public string Password { get; set; }
 
-        private string password;
-
-        public string Password
-        {
-            get { return password; }
-            set { password = value; }
-        }
-
-        public User(int id, string login, string password)
-        {
-            UserID = id;
-            Login = login;
-            Password = password;
-        }
+        //public User(int id, string login, string password)
+        //{
+        //    UserID = id;
+        //    Login = login;
+        //    Password = password;
+        //}
 
         public bool UserCheck(string logintocheck, string passwordtocheck)
         {

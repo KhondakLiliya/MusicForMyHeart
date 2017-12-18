@@ -29,19 +29,39 @@ namespace MusicForMyHeart
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             bool loginsuccess = false;
-            foreach(User user in repository.users)
-            {
-                if(user.UserCheck(logintextbox.Text, passwordbox.Password))
+            //foreach(User user in repository.users)
+            //{
+                if(logintextbox.Text=="Liliya" && passwordbox.Password=="liliya")
                 {
                     MessageBox.Show("Correct Password");
-                    repository.currentuser = new User(user.UserID, logintextbox.Text, passwordbox.Password);
+                    //repository.currentuser = new User(user.UserID, logintextbox.Text, passwordbox.Password);
                     Music musicwindow = new Music();
                     musicwindow.Show();
                     this.Close();
                     loginsuccess = true;
-                    break;
+                    //break;
                 }
-            }
+                if (logintextbox.Text == "Vanya" && passwordbox.Password == "vanya")
+                {
+                    MessageBox.Show("Correct Password");
+                    //repository.currentuser = new User(user.UserID, logintextbox.Text, passwordbox.Password);
+                    Music musicwindow = new Music();
+                    musicwindow.Show();
+                    this.Close();
+                    loginsuccess = true;
+                    //break;
+                }
+                if (logintextbox.Text == "Polina" && passwordbox.Password == "polina")
+                {
+                    MessageBox.Show("Correct Password");
+                    //repository.currentuser = new User(user.UserID, logintextbox.Text, passwordbox.Password);
+                    Music musicwindow = new Music();
+                    musicwindow.Show();
+                    this.Close();
+                    loginsuccess = true;
+                    //break;
+                }
+            //}
             if (!loginsuccess)
             {
                 MessageBox.Show("Wrong Password");

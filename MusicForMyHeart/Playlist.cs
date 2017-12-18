@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,38 +10,22 @@ namespace MusicForMyHeart
 {
     class Playlist
     {
-        private int playlistid;
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int PlaylistID { get; set; }
 
-        public int PlaylistID
-        {
-            get { return playlistid; }
-            set { playlistid = value; }
-        }
+        public string PlaylistName { get; set; }
 
-        private string playlistname;
-
-        public string PlaylistName
-        {
-            get { return playlistname; }
-            set { playlistname = value; }
-        }
-
-        private int userid;
-
-        public int UserID
-        {
-            get { return userid; }
-            set { userid = value; }
-        }
+        public int UserID { get; set; }
 
         public List<SongData> SongsInPlaylist { get; set; }
 
-        public Playlist(int pid, int uid, string pname, List<SongData> list)
-        {
-            PlaylistID = pid;
-            UserID = uid;
-            PlaylistName = pname;
-            SongsInPlaylist = list;
-        }
+        //public Playlist(int pid, int uid, string pname, List<SongData> list)
+        //{
+        //    PlaylistID = pid;
+        //    UserID = uid;
+        //    PlaylistName = pname;
+        //    SongsInPlaylist = list;
+        //}
     }
 }

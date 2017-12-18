@@ -17,6 +17,5 @@
         <Button Content="Add New Playlist" Name="NewPlaylistButton" HorizontalAlignment="Left" Height="26" Margin="292,22,0,0" VerticalAlignment="Top" Width="115" Click="NewPlaylistButton_Click" FontFamily="Georgia" FontWeight="Bold"/>
         <Button Content="Back" HorizontalAlignment="Left" Height="26" Margin="425,22,0,0" VerticalAlignment="Top" Width="51" Click="Button_Click" FontFamily="Georgia" FontWeight="Bold"/>
         <ListBox HorizontalAlignment="Left" Height="175" Margin="10,173,0,0" VerticalAlignment="Top" Width="507"/>
-
     </Grid>
 </Window>

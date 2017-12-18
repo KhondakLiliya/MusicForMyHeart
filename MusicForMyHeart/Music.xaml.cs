@@ -19,9 +19,12 @@ namespace MusicForMyHeart
     /// </summary>
     public partial class Music : Window
     {
+        Context context = new Context();
+        
         public Music()
         {
             InitializeComponent();
+            context.SongData.ToList();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
