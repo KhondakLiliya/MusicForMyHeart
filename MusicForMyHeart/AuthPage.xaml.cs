@@ -28,44 +28,30 @@ namespace MusicForMyHeart
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            bool loginsuccess = false;
-            //foreach(User user in repository.users)
-            //{
-                if(logintextbox.Text=="Liliya" && passwordbox.Password=="liliya")
-                {
-                    MessageBox.Show("Correct Password");
-                    //repository.currentuser = new User(user.UserID, logintextbox.Text, passwordbox.Password);
-                    Music musicwindow = new Music();
-                    musicwindow.Show();
-                    this.Close();
-                    loginsuccess = true;
-                    //break;
-                }
-                if (logintextbox.Text == "Vanya" && passwordbox.Password == "vanya")
-                {
-                    MessageBox.Show("Correct Password");
-                    //repository.currentuser = new User(user.UserID, logintextbox.Text, passwordbox.Password);
-                    Music musicwindow = new Music();
-                    musicwindow.Show();
-                    this.Close();
-                    loginsuccess = true;
-                    //break;
-                }
-                if (logintextbox.Text == "Polina" && passwordbox.Password == "polina")
-                {
-                    MessageBox.Show("Correct Password");
-                    //repository.currentuser = new User(user.UserID, logintextbox.Text, passwordbox.Password);
-                    Music musicwindow = new Music();
-                    musicwindow.Show();
-                    this.Close();
-                    loginsuccess = true;
-                    //break;
-                }
-            //}
-            if (!loginsuccess)
-            {
-                MessageBox.Show("Wrong Password");
-            }
+            repository.Read();
+            MessageBox.Show("Correct!");
+            Music musicwindow = new Music();
+            musicwindow.Show();
+            this.Close();
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            repository.Create(Int32.Parse(IDTextBox.Text), logintextbox.Text, passwordbox.Password);
+            MessageBox.Show("Saved");
+        }
+
+        private void Button_Click1(object sender, RoutedEventArgs e)
+        {
+            repository.Delete(Int32.Parse(IDTextBox.Text), logintextbox.Text, passwordbox.Password);
+            MessageBox.Show("Saved");
+        }
+
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            repository.Update(Int32.Parse(IDTextBox.Text), logintextbox.Text, passwordbox.Password);
+            MessageBox.Show("Saved");
         }
     }
 }

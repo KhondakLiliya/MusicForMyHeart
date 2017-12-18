@@ -15,11 +15,7 @@ namespace MusicForMyHeart
 
         public Context() : base("Data")
         {
-            //Database.SetInitializer<Repository>(new DropCreateDatabaseAlways<Repository>());
-            //string sqlcommand = "Select * from Person";
-            //SqlDataReader datar = new SqlCommand(sqlcommand, new SqlConnection(connectionString)).ExecuteReader();
-            //users = new List<User>();
-            //users.Add(new User((int)datar["ID_person"], (string)datar["login"], (string)datar["password"]));
+           
         }
     }
 }
