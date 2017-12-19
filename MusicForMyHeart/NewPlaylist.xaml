@@ -5,17 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MusicForMyHeart"
         mc:Ignorable="d"
-        Title="NewPlaylist" Height="300" Width="486.17">
+        Title="NewPlaylist" Height="400" Width="487">
     <Window.Background>
         <ImageBrush ImageSource="muz_7.jpg" Stretch="UniformToFill" TileMode="None" />
     </Window.Background>
-    <Grid>
-        <Label Content="Enter name for playlist:" Foreground="White" HorizontalAlignment="Left" Height="27" Margin="10,10,0,0" VerticalAlignment="Top" Width="157" FontFamily="Georgia" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Name="Nametextbox" Height="27" Margin="186,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"/>
-        <Label Content="Search:" Foreground="White" HorizontalAlignment="Left" Height="27" Margin="22,60,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Georgia"/>
-        <TextBox HorizontalAlignment="Left" Name="Searchtextbox" Height="27" Margin="137,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
-        <Button Content="OK" HorizontalAlignment="Left" Height="44" Margin="352,23,0,0" VerticalAlignment="Top" Width="50" FontFamily="Georgia" FontWeight="Bold"/>
-        <ListBox HorizontalAlignment="Left" Height="148" Margin="10,112,0,0" VerticalAlignment="Top" Width="458"/>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label Content="Enter name for playlist:" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontFamily="Georgia" FontWeight="Bold"/>
+        <TextBox Name="Nametextbox" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right" Width="160" TextWrapping="Wrap" />
+        <Label Content="Search:" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="White" FontWeight="Bold" FontFamily="Georgia"/>
+        <TextBox Name="Searchtextbox" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center"  TextWrapping="Wrap" />
+        <Button Content="OK" Grid.Column="3" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Height="40" Width="40" FontFamily="Georgia" FontWeight="Bold"/>
+        <ListBox Grid.Row="2" Grid.ColumnSpan="4" Grid.RowSpan="3" Height="200" Width="460"/>
 
     </Grid>
 </Window>
