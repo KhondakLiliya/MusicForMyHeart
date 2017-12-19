@@ -27,7 +27,7 @@
         <TextBox Name="Nametextbox" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right" Width="160" TextWrapping="Wrap" />
         <Label Content="Search:" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="White" FontWeight="Bold" FontFamily="Georgia"/>
         <TextBox Name="Searchtextbox" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center"  TextWrapping="Wrap" />
-        <Button Content="OK" Grid.Column="3" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Height="40" Width="40" FontFamily="Georgia" FontWeight="Bold"/>
+        <Button Content="OK" Grid.Column="3" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Height="40" Width="40" FontFamily="Georgia" FontWeight="Bold" Click="OKButton_Click"/>
         <ListBox Grid.Row="2" Grid.ColumnSpan="4" Grid.RowSpan="3" Height="200" Width="460"/>
 
     </Grid>
